@@ -1,0 +1,112 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  body h2{
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color:#222;
+    padding-top: 13px;
+    margin-left: 60px;
+    
+  }
+  
+  
+  header{
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color:#222;
+    padding-top: 13px;
+    padding-left: 2px;
+    margin-left: 1px;
+    
+   
+
+  }
+  
+  
+  
+  nav{
+    background-color: black;
+    margin-top: 12px;
+  }
+   nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    
+    width: 180px;
+    
+   }
+   nav ul li{
+    padding: 0px;
+    margin-left: 10px;
+    
+   }
+   nav ul li a{
+    text-decoration: none;
+    color:#ddd;
+    
+   
+    padding: 5px 10px;
+    display: block;
+    font-family:  sans-serif;
+    font-size: small;
+    line-height: 1;
+    
+   }
+   nav ul li:hover{
+    background-color: #444;
+
+   }
+   section{
+    padding: 20px;
+    margin-left: 70px;
+    background-color: white;
+    max-width: 1200px;
+  margin: 7px auto;
+  box-shadow: 0 4px 8px rgba(242, 243, 248, 0.971);
+   
+    
+    
+    border-radius: 2px;
+   }
+   section h3{
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color:#222;
+   }
+   .blog-content img{
+    width:160px;
+   
+    
+    margin-right: 20px;
+    border-radius: 1px;
+    
+   }
+   .blog-content p {
+    
+    
+    margin-bottom: 1px;
+    line-height: 1.5;
+    padding-top: 15px;
+   }
+   .container {
+    max-width: 1300px;
+    margin: 2px auto;
+    border: 6px solid #444; /* or any color you like */
+    padding: 0px;
+    
+    background-color: white;
+    border-radius: 1px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  }
+   

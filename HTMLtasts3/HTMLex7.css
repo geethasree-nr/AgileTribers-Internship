@@ -1,0 +1,49 @@
+.container{
+    background-color: aliceblue;
+    color: black;
+    max-width: 800px;
+    margin:30px auto;
+    
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px  rgba(0,0,0,0.2);
+}
+    
+    
+    
+    
+    
+    
+    
+body{
+    background-color: darkseagreen;
+    margin: 20px;
+}
+h1{
+    color:darkgreen
+}
+.text-color{
+    color: rgb(222, 207, 35);
+    
+}
+hr{
+    border: 1px solid black;
+    margin: 20px 0;
+}
+h2{
+    color: darkgreen;
+}
+.img-row{
+    margin-left: 60px;
+    display: flex;
+    gap: 80px;
+    align-items: center;
+}
+.mood img{
+    width: 250px;
+}
+.mood p{
+    text-align:left;
+    margin-top: 1px;
+
+}
