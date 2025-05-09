@@ -1,0 +1,33 @@
+.container{
+    width: 300px;
+    margin: auto;
+    border:1px solid black
+}
+header,nav,section,article,aside,footer{
+    border:1px solid black;
+    padding: 10px;
+    text-align: center;
+    margin: 5px;
+}
+header,nav,footer{
+    text-align: center;
+    padding:10px;
+    border:1px solid black;
+}
+.main{
+    display:flex
+}
+.left{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+section,article,aside{
+    border:1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+aside{
+    flex: 1;
+    padding-top: 27px;
+}

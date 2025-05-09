@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Animated Layout</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      
+      background-color: #f4f4f4;
+      animation: fadeInBody 1s ease-in;
+    }
+    
+    .wrapper {
+      width: 600px;
+      margin: auto;
+    }
+
+    header {
+      background-color: #ddd;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      font-family:'Times New Roman', Times, serif;
+      animation: slideDown 1s ease-in-out;
+    }
+
+    nav {
+      background-color: #ddd;
+      text-align: center;
+      margin-top: 5px;
+      padding: 12px;
+      animation: fadeIn 1.2s ease-in;
+    }
+
+    nav a {
+      margin: 0 15px;
+      
+      color: purple;
+
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: black;
+    }
+
+    .feature {
+      background-color: #ddd;
+      padding: 60px;
+      text-align: center;
+      
+      margin-top: 15px;
+    }
+
+   
+    .columns {
+      display: flex;
+      justify-content: space-around;
+      padding: 10px;
+      
+      background-color: #f4f4f4;
+    }
+    
+
+    .column {
+      background-color: #e0e0e0;
+      width: 30%;
+      line-height: 100px;
+      
+    
+      text-align: center;
+      transition: transform 0.3s ease;
+      animation: slideUp 1s ease-out;
+    }
+
+    .column:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #ddd;
+      padding: 10px;
+      text-align: center;
+      font-size: 14px;
+      animation: fadeIn 2s ease-in;
+    }
+   
+
+   
+
+
+    /* Animations */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeInBody {
+      from {
+        background-color: #fff;
+        opacity: 0;
+      }
+      to {
+        background-color: #f4f4f4;
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideUp {
+      from {
+        transform: translateY(30px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideDown {
+      from {
+        transform: translateY(-30px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+  </style>
+</head>
+<body>
+    <div class="wrapper">
+  <header>Logo</header>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Products</a>
+    <a href="#">Services</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+  <div class="feature">Feature</div>
+  <div class="columns">
+    <div class="column">Column One</div>
+    <div class="column">Column Two</div>
+    <div class="column">Column Three</div>
+  </div>
+  <footer>© Copyright 2011</footer>
+  </div>
+</body>
+</html>

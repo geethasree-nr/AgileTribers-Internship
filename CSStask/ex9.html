@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wireframe Layout</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: white;
+    }
+
+    .top {
+      background-color: #3b7a84;
+      color: white;
+      padding: 8px;
+      text-align: left;
+      font-weight: bold;
+      max-width: 600px;
+      margin: 40px auto 0;
+      
+    }
+
+    .outer-container {
+      max-width: 600px;
+      margin: auto;
+      background-color: #c2e0e3; /* Light blue background wrapping all sections */
+      padding: 10px;
+      margin-top: 25px;
+    
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 10px;
+    }
+
+    .header,
+    .features,
+    .footer {
+      grid-column: 1 / 3;
+      background-color: #a2cbdc;
+      padding: 20px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .intro {
+      background-color: #a2cbdc;
+      padding: 40px 10px;
+      height: 160px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .hero {
+      background-color: #a2cbdc;
+      padding: 30px 10px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .cta1,
+    .cta2 {
+      background-color: yellow;
+      padding: 10px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .more-copy {
+      background-color: #a2cbdc;
+      padding: 20px;
+      text-align: center;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top">Original Wireframe<br><span style="font-weight: normal;">&lt;-- 600px --&gt;</span></div>
+
+  <div class="outer-container">
+    <div class="grid-container">
+      <div class="header">Header</div>
+
+      <div class="intro">Intro Copy</div>
+      <div class="hero">Hero Image</div>
+      <div style="grid-column: 2;"> <!-- force placement to right -->
+        <div class="cta1">Call to Action</div>
+      </div>
+
+      <div class="features">Features</div>
+
+      <div class="more-copy">More Copy</div>
+      <div class="cta2">Call to Action</div>
+
+      <div class="footer">Footer</div>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        .container{
+            width: 300px;
+            border: 2px solid black;
+            margin: auto;
+            margin-top: 60px;
+            text-align: center;
+        }
+        header{
+            background-color: lightpink;
+            padding: 20px;
+
+        }
+        nav{
+            background-color:palevioletred;
+            padding: 10px;
+
+        }
+        .main{
+            display: flex;
+
+        }
+        
+        footer{
+            background-color:rgb(219, 67, 199);
+            padding: 20px;
+
+
+        }
+        .left{
+            display: flex;
+            background-color: plum;
+            padding: 40px;
+            padding-right: 12px;
+            padding-left: 12px;
+            
+        }
+        .right{
+            flex: 1;
+            background-color: rgb(198, 71, 212);
+            padding: 50px;
+            color: antiquewhite;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>Header</header>
+        <nav>Navigation Bar</nav>
+        
+        <div class="main">
+        <div class="left">Left panel</div>
+        <div class="right">Main Content </div>   
+            
+
+        </div>
+
+       
+        <footer>Footer</footer>
+
+
+    </div>
+    
+</body>
+</html>
